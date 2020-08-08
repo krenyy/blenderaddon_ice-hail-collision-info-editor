@@ -220,7 +220,7 @@ class IceHailCI(bpy.types.Operator):
     )
 
     filter_camerabody: bpy.props.BoolProperty(
-        name="ameraBody",
+        name="CameraBody",
         description="",
         default=False,
     )
@@ -326,7 +326,7 @@ class IceHailCI(bpy.types.Operator):
 
     def invoke(self, context, event):
         wm = context.window_manager
-        return wm.invoke_props_dialog(self, width=400)
+        return wm.invoke_props_dialog(self, width=600)
 
     def draw(self, context):
         layout = self.layout
